@@ -1,29 +1,29 @@
-Markov Text Generator
+****Markov Text Generator****
 
-This project is a small Markov Text Generator I created for my Algorithms homework. The goal was to read multiple text files, build a Markov chain based on word sequences, and then generate new text that imitates the style of the original files.
+A simple Markov Chain based text generator created as part of my Algorithms coursework.
+This project reads one or more text files, learns the word-patterns inside them, and generates new text that sounds similar to the original material.
 
-I used classic books like Alice in Wonderland and Pride and Prejudice to test the generator. The program lets me choose how many files to combine, set a window size, change the temperature, and decide how many words to generate. It was interesting to see how the writing styles blend together.
+**📌 Project Overview**
 
-How It Works
+This project uses Markov chains to generate new text based on classic literature.
+You provide any number of .txt files, choose a window size, temperature, and the number of words you want.
+The program then creates a dictionary of word sequences and uses it to produce new, original text.
 
-The program asks how many text files you want to load.
+I tested the program using Alice in Wonderland and Pride and Prejudice, and the results were surprisingly close to the writing style of the books.
 
-It reads all the files and combines them into one long string.
+**📂 Features**
 
-It builds a Markov dictionary based on the window size (the number of words in each state).
-
-Using the dictionary and the temperature value, it generates new text word by word.
-
-The output is a completely new piece of writing that still feels similar to the books used as input.
-
-Features
-
-Load any number of .txt files
-
-Adjustable window size (controls how closely it follows the writing style)
-
+Load multiple text files at once
+Adjustable window size (controls context strength)
 Adjustable temperature (controls randomness)
+Generates custom-length output
+Works with any plain-text book or dataset
+Fully interactive command-line interface
 
-Generates any number of words
+**🛠 How the Program Works**
 
-Works with plain-text books from Gutenberg or your own files
+Ask the user how many text files to load
+Read and combine all files into one dataset
+Build a Markov chain dictionary using the chosen window size
+Generate text using probability and temperature settings
+Print the final generated output
