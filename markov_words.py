@@ -1,6 +1,4 @@
-# markov_words.py
 # BSSD 3410/5410 - Lesson 13.1 Markov Text Generator (Word-Based)
-# Author: Your Name
 # Notes:
 # - Combines multiple .txt files into one corpus
 # - Builds Markov rules on *words* using a sliding window (n-grams)
@@ -152,3 +150,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
